@@ -16,14 +16,7 @@ h1 {
   color : blue;
   text-align: center;
 }
-div {
-  background-color: lightgrey;
-  width : 500px;
-  height : 400px;
-  margin : 30px;
-  padding : 20px;
 
-}
 
 #top {
     font-size: 36px;
@@ -40,4 +33,69 @@ div {
 
 .name {
   font-weight: bold;
+}
+
+ol li {
+  color : red;
+}
+
+button {
+  width: 200px;
+  height: 50px;
+  font-size: 24px;
+  background-color: darkgreen;
+}
+
+button:hover {
+  background-color: orange;
+}
+
+a::before {
+  content : \21d2 "Click here":;
+  font-weight: bold;
+}
+
+@media print {
+  .screen-only {
+    display: none;
+  }
+}
+
+@media (min-width :500px) {
+  h1::before{
+    content: "Welcome to my web page"
+  }
+}
+
+@media (max-width :499px) {
+  h1::before{
+    content: "Welcome"
+  }
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.container > div {
+  background-color: springgreen;
+  font-size: 20px;
+  margin: 20px;
+  padding: 20px;
+  width: 200px;
+}
+
+.grid {
+  background-color: green;
+  display: grid;
+  padding: 20px;
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+  grid-template-columns: 200px 200px auto;
+}
+
+.grid-item{
+  background-color: white;
+  font-size: 20px;
 }
